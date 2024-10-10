@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:hint="Enter number"
+        android:background="@drawable/rounded_corners" />
+
+    <Spinner
+        android:id="@+id/inputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputNumber"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/outputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputType"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputType"
+        android:layout_centerHorizontal="true"
+        android:text="Convert"
+        android:background="@drawable/rounded_corners_button"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/outputResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertButton"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>
